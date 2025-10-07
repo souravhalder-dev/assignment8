@@ -1,0 +1,236 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1584697964403-1b9a8c37b7d3?auto=format&fit=crop&w=600&q=80",
+    "title": "Focusly",
+    "companyName": "Mindware Studios",
+    "id": 1,
+    "description": "Focusly is a mindfulness and productivity app that helps you eliminate distractions and stay deeply engaged in your work. It combines Pomodoro timers, ambient focus sounds, and real-time progress tracking. With features like focus sessions, daily streaks, and detailed analytics, it’s designed to boost concentration and efficiency. The app syncs across all devices, ensuring your progress is never lost. Users can customize timers, themes, and soundscapes to create a calming digital workspace. Whether you’re studying, coding, or writing, Focusly helps you build sustainable focus habits every day.",
+    "size": 45,
+    "reviews": 12890,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 580 },
+      { "name": "3 star", "count": 940 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 8230 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=80",
+    "title": "FitTrack Pro",
+    "companyName": "Healthify Labs",
+    "id": 2,
+    "description": "FitTrack Pro is your all-in-one fitness and wellness tracker designed for goal-oriented individuals. It helps monitor daily activity, calories, sleep patterns, and heart rate with accurate metrics. The app integrates with major wearables and provides customized workout plans based on your goals. Users can track nutrition, set step challenges, and receive weekly progress reports. With AI-powered insights and motivational reminders, FitTrack Pro transforms your health data into actionable plans. Whether you’re losing weight or building endurance, this app ensures consistent improvement and balanced lifestyle management.",
+    "size": 72,
+    "reviews": 9500,
+    "ratingAvg": 4.3,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 610 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 990 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 4220 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80",
+    "title": "NoteSync",
+    "companyName": "CloudEase Inc.",
+    "id": 3,
+    "description": "NoteSync is a lightweight note-taking and organization app built for modern multitaskers. It offers real-time cloud sync, allowing your notes to stay updated across all your devices instantly. You can categorize, tag, and color-code your entries for quick access. The markdown editor supports rich formatting, while offline access ensures your thoughts are never out of reach. NoteSync also lets you attach images, PDFs, and voice notes to your content. With seamless search and encrypted storage, it’s a secure, fast, and flexible solution for your digital journaling needs.",
+    "size": 38,
+    "reviews": 3200,
+    "ratingAvg": 4.2,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 540 },
+      { "name": "4 star", "count": 1040 },
+      { "name": "5 star", "count": 1270 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=600&q=80",
+    "title": "Budget Buddy",
+    "companyName": "FinWise",
+    "id": 4,
+    "description": "Budget Buddy is your smart personal finance manager, designed to simplify budgeting and expense tracking. It automatically categorizes your spending, tracks your income, and generates visual reports to help you stay in control of your money. The app supports multiple accounts, currencies, and syncing with banks for real-time balance updates. Budget Buddy’s analytics identify spending patterns and offer saving tips. With goal setting and reminders, it ensures you stay on track with your financial targets. Ideal for students, professionals, or families, it helps create lasting financial discipline.",
+    "size": 60,
+    "reviews": 7800,
+    "ratingAvg": 4.7,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 510 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 5060 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80",
+    "title": "PhotoMaster",
+    "companyName": "PixNova",
+    "id": 5,
+    "description": "PhotoMaster is a professional-grade photo editing tool that brings powerful editing features to your phone. From AI-based background removal to one-tap filters, it offers tools used by designers and photographers. The app supports RAW editing, layers, and tone adjustment. Users can create stunning visuals with advanced retouching, artistic overlays, and color correction options. With built-in cloud backup and social media integration, PhotoMaster streamlines sharing your creativity. Whether you’re touching up portraits or editing landscapes, PhotoMaster transforms photos into professional-quality masterpieces with minimal effort.",
+    "size": 125,
+    "reviews": 18000,
+    "ratingAvg": 4.5,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 690 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 10110 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1587614203976-365c74645e83?auto=format&fit=crop&w=600&q=80",
+    "title": "TaskFlow",
+    "companyName": "Flowmotion Tech",
+    "id": 6,
+    "description": "TaskFlow helps teams and individuals stay organized with a clean, drag-and-drop project management interface. It supports task grouping, subtasks, priorities, and file attachments for efficient collaboration. You can create visual boards, set due dates, and receive notifications about deadlines. TaskFlow integrates with productivity tools like Slack and Google Calendar to streamline workflows. Its real-time sync ensures everyone stays updated on project progress. Designed for agile environments and freelancers alike, TaskFlow offers simplicity without sacrificing control, making project management productive and enjoyable.",
+    "size": 54,
+    "reviews": 6300,
+    "ratingAvg": 4.4,
+    "downloads": 640000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 1920 },
+      { "name": "5 star", "count": 3100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80",
+    "title": "MusicHub",
+    "companyName": "Soundly Media",
+    "id": 7,
+    "description": "MusicHub is a premium music streaming service offering millions of tracks from global artists. With personalized playlists, smart recommendations, and offline playback, it redefines how you listen to music. The app provides high-quality audio, curated mixes, and live radio stations for every mood. You can follow your favorite artists, share playlists, and explore new genres daily. MusicHub’s AI engine tailors your experience based on listening habits, ensuring every song feels perfectly timed. Whether relaxing, working, or exercising, MusicHub keeps your world filled with rhythm.",
+    "size": 90,
+    "reviews": 54000,
+    "ratingAvg": 4.8,
+    "downloads": 7000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 5100 },
+      { "name": "4 star", "count": 14000 },
+      { "name": "5 star", "count": 31000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=600&q=80",
+    "title": "GameBoost",
+    "companyName": "Speedify Labs",
+    "id": 8,
+    "description": "GameBoost is a performance optimization app made for mobile gamers. It automatically clears background processes, stabilizes network ping, and enhances system performance before gameplay. The app detects installed games and applies device-specific boosts for smoother frame rates. GameBoost also monitors temperature and battery to prevent overheating during long sessions. Its minimal interface and one-tap optimization make it beginner-friendly. Whether playing online shooters or high-graphics RPGs, GameBoost ensures lag-free, uninterrupted gaming. Unlock your phone’s true gaming potential and enjoy maximum power without compromise.",
+    "size": 50,
+    "reviews": 7800,
+    "ratingAvg": 4.1,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 630 },
+      { "name": "2 star", "count": 830 },
+      { "name": "3 star", "count": 1120 },
+      { "name": "4 star", "count": 2180 },
+      { "name": "5 star", "count": 3040 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
+    "title": "Learnify",
+    "companyName": "EduSmart Global",
+    "id": 9,
+    "description": "Learnify revolutionizes online education by offering interactive courses in coding, business, and design. Its bite-sized lessons and quizzes make learning engaging and effective. Users can enroll in top-rated programs, track achievements, and earn certificates from global instructors. Learnify supports offline mode and adaptive recommendations based on your interests. The app fosters community learning with discussion groups and peer challenges. Whether you’re a beginner or professional upgrading skills, Learnify makes continuous education accessible and enjoyable anywhere, anytime, helping users grow personally and professionally.",
+    "size": 68,
+    "reviews": 15000,
+    "ratingAvg": 4.9,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 11450 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+    "title": "Weatherly",
+    "companyName": "SkyVision",
+    "id": 10,
+    "description": "Weatherly delivers hyper-local weather forecasts, radar maps, and severe weather alerts with unmatched accuracy. Using real-time satellite data and AI forecasting, it provides updates every minute. Users can view hourly, daily, or 10-day forecasts with wind, humidity, and visibility levels. The app also includes sunrise and sunset times, pollen levels, and UV index. Custom widgets let you check conditions directly from your home screen. Whether planning a trip or checking for storms, Weatherly keeps you prepared for any weather conditions around the world.",
+    "size": 40,
+    "reviews": 11200,
+    "ratingAvg": 4.4,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 410 },
+      { "name": "2 star", "count": 670 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5920 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80",
+    "title": "MindCalm",
+    "companyName": "Zenify Apps",
+    "id": 11,
+    "description": "MindCalm helps you reduce stress, improve focus, and sleep better through guided meditation and relaxation techniques. The app includes sessions for beginners and advanced practitioners covering topics like mindfulness, anxiety relief, and emotional balance. You can choose calming background sounds, track mood progress, and set meditation reminders. MindCalm’s personalized approach adapts to your goals. With a soothing interface and expert-led programs, it’s your pocket companion for mental well-being. Take a few minutes each day to reset your mind and embrace inner calm.",
+    "size": 55,
+    "reviews": 8900,
+    "ratingAvg": 4.6,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 290 },
+      { "name": "2 star", "count": 380 },
+      { "name": "3 star", "count": 710 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 5120 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=600&q=80",
+    "title": "ShopEase",
+    "companyName": "EcomWave",
+    "id": 12,
+    "description": "ShopEase brings a personalized and seamless shopping experience to your phone. Browse thousands of brands, compare prices, and enjoy AI-curated product recommendations based on your style. The app offers secure payment methods, quick delivery tracking, and exclusive deals for registered users. With AR try-ons and visual search, shopping has never been more convenient. You can save favorite items to wishlists and get instant notifications on price drops. ShopEase combines technology and simplicity to make online shopping fast, safe, and tailored to your needs.",
+    "size": 80,
+    "reviews": 21000,
+    "ratingAvg": 4.3,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 1600 },
+      { "name": "2 star", "count": 1900 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 7200 },
+      { "name": "5 star", "count": 12200 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=600&q=80",
+    "title": "ChatWave",
+    "companyName": "Talkify Tech",
+    "id": 13,
+    "description": "ChatWave is a modern messaging app that combines speed, privacy, and simplicity. It supports high-quality voice and video calls with end-to-end encryption. Users can create groups, send multimedia files, and react to messages with emojis. ChatWave syncs across all devices and ensures zero data loss. Its minimal design and customizable themes enhance the chatting experience. The app also features disappearing messages, private chats, and quick replies. Built for both personal and business communication, ChatWave ensures your conversations stay fast, secure, and expressive.",
+    "size": 110,
+    "reviews": 64000,
+    "ratingAvg": 4.7,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 2800 },
+      { "name": "2 star", "count": 3400 },
+      { "name": "3 star", "count": 5800 },
+      { "name": "4 star", "count": 17000 },
+      { "name": "5 star", "count": 35000 }
+    ]
+  }
+]
