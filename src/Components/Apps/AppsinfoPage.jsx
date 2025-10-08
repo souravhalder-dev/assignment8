@@ -10,7 +10,7 @@ const AppsinfoPage = () => {
   const data = useLoaderData();
 
   const singleApps = data.find((singleApp) => singleApp.id === nuberConvertid);
-  console.log(singleApps);
+
   const {
     image,
     title,
@@ -22,42 +22,53 @@ const AppsinfoPage = () => {
     description,
   } = singleApps;
   return (
-    <div className="bg-gray-100 px-[80px] py-[80px]">
-      <div className=" flex justify-start items-center">
+    <div className="bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-20 py-8 sm:py-12 lg:py-20">
+      <div className="flex flex-col lg:flex-row justify-start lg:justify-start items-start lg:items-center gap-6 lg:gap-10">
         <img
-          className="w-[350px]  object-cover  bg-cover overflow-hidden"
+          className="w-full lg:w-[350px] h-[200px] lg:h-auto object-cover bg-cover overflow-hidden rounded-md"
           src={image}
           alt=""
         />
-        <div className="ml-[40px]">
-          <h1 className="font-bold text-[32px]">{title}</h1>
-          <p className="mt-2 text-gray-400">Developed by {companyName}</p>
-          <hr className="mt-7 text-gray-300" />
-          <div className="mt-7 flex gap-[24px]">
-            <div>
-              <img className="h-[30px]" src={dounloadicon} alt="" />
-              <h1 className="text-gray-400">Downloads</h1>
-              <p className="font-bold text-[25px]">{downloads}M</p>
+        <div className="w-full lg:w-auto">
+          <h1 className="font-bold text-2xl sm:text-3xl lg:text-[32px]">
+            {title}
+          </h1>
+          <p className="mt-2 text-gray-400 text-sm sm:text-base">
+            Developed by {companyName}
+          </p>
+          <hr className="mt-4 sm:mt-6 lg:mt-7 text-gray-300" />
+          <div className="mt-4 sm:mt-6 lg:mt-7 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-[24px]">
+            <div className="flex flex-col items-center sm:items-start gap-1">
+              <img className="h-[24px] sm:h-[30px]" src={dounloadicon} alt="" />
+              <h1 className="text-gray-400 text-xs sm:text-sm">Downloads</h1>
+              <p className="font-bold text-xl sm:text-[25px]">{downloads}M</p>
             </div>
-            <div>
-              <img className="h-[30px]" src={avarageicon} alt="" />
-              <h1 className="text-gray-400">Average Ratings</h1>
-              <p className="font-bold text-[25px]">{ratingAvg}M</p>
+            <div className="flex flex-col items-center sm:items-start gap-1">
+              <img className="h-[24px] sm:h-[30px]" src={avarageicon} alt="" />
+              <h1 className="text-gray-400 text-xs sm:text-sm">
+                Average Ratings
+              </h1>
+              <p className="font-bold text-xl sm:text-[25px]">{ratingAvg}M</p>
             </div>
-            <div>
-              <img className="h-[30px]" src={reviewicon} alt="" />
-              <h1 className="text-gray-400">Total Reviews</h1>
-              <p className="font-bold text-[25px]">{reviews}M</p>
+            <div className="flex flex-col items-center sm:items-start gap-1">
+              <img className="h-[24px] sm:h-[30px]" src={reviewicon} alt="" />
+              <h1 className="text-gray-400 text-xs sm:text-sm">
+                Total Reviews
+              </h1>
+              <p className="font-bold text-xl sm:text-[25px]">{reviews}M</p>
             </div>
           </div>
-          <button className="mt-9 btn bg-[#00D390] p-4 text-white rounded-md">
+          <button className="mt-6 sm:mt-8 lg:mt-9 btn bg-[#00D390] p-3 sm:p-4 text-white rounded-md w-full lg:w-auto">
             Install Now ({size}MB)
           </button>
         </div>
       </div>
-      <hr className="text-gray-300 mt-10" />
+      <hr className="text-gray-300 mt-6 sm:mt-8 lg:mt-10" />
       <RatingChart singleApps={singleApps} />
-      <div className="mt-9">{description}</div>
+      <div className="mt-6 sm:mt-8 lg:mt-9">
+        <h1 className="font-bold mb-2 text-lg sm:text-xl">Description</h1>
+        {description}
+      </div>
     </div>
   );
 };
