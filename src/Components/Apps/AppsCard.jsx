@@ -2,8 +2,6 @@ import React from "react";
 import dounload from "./../../assets/icon-downloads.png";
 import rating from "./../../assets/icon-ratings.png";
 const AppsCard = ({ singleDta }) => {
-  console.log(singleDta);
-
   const { image, title, downloads, ratingAvg } = singleDta;
 
   return (

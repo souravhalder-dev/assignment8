@@ -1,11 +1,11 @@
-import React from "react";
 import { Link, NavLink } from "react-router";
 import logo from "./../../assets/logo.png";
 import github from "./../../assets/fi_2111432.png";
+import "./Navber.css";
 const Navber = () => {
   const link = (
     <>
-      <NavLink className={"ml-2"} to={"/"}>
+      <NavLink className={`{}`} to={"/"}>
         {" "}
         Home
       </NavLink>
@@ -48,18 +48,20 @@ const Navber = () => {
               {link}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
-            <img className="w-10 h-10" src={logo} alt="" /> HERO.IO
-          </a>
+          <Link to={"/"}>
+            <div className="btn btn-ghost text-xl">
+              <img className="w-10 h-10" src={logo} alt="" /> HERO.IO
+            </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{link}</ul>
         </div>
         <div className="navbar-end">
           <Link to={"https://github.com/souravhalder-dev"}>
-            <a className="btn font-semibold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2]">
+            <div className="btn font-semibold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2]">
               <img className="w-5 h-5  " src={github} alt="" /> Contribute
-            </a>
+            </div>
           </Link>
         </div>
       </div>

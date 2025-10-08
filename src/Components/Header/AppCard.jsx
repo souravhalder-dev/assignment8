@@ -14,7 +14,7 @@ const AppCard = ({ data }) => {
       </p>
       <div className="px-[80px] grid grid-cols-4 gap-2">
         {datas.map((singleDta) => (
-          <AppsCard singleDta={singleDta}></AppsCard>
+          <AppsCard key={singleDta.id} singleDta={singleDta}></AppsCard>
         ))}
       </div>
       <div className="justify-self-center mt-10">

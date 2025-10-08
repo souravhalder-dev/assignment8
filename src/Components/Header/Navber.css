@@ -1,0 +1,12 @@
+a.active {
+  color: blue;
+  text-decoration: underline;
+}
+
+a.pending {
+  animate: pulse 1s infinite;
+}
+
+a.transitioning {
+  /* css transition is running */
+}
