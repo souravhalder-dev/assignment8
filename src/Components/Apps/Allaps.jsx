@@ -1,11 +1,9 @@
 import React from "react";
 import dounload from "./../../assets/icon-downloads.png";
 import rating from "./../../assets/icon-ratings.png";
-const AppsCard = ({ singleDta }) => {
-  console.log(singleDta);
-
-  const { image, title, downloads, ratingAvg } = singleDta;
-
+const Allaps = ({ data }) => {
+  console.log(data);
+  const { image, title, downloads, ratingAvg } = data;
   return (
     <div className="mt-5   my-1">
       <div className="card bg-base-100  shadow-sm p-4">
@@ -30,4 +28,4 @@ const AppsCard = ({ singleDta }) => {
   );
 };
 
-export default AppsCard;
+export default Allaps;

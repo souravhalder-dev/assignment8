@@ -1,11 +1,11 @@
 import React from "react";
 import AppsCard from "../Apps/AppsCard";
+import { Link } from "react-router";
 
 const AppCard = ({ data }) => {
-  console.log(data);
   const datas = data.slice(0, 8);
   return (
-    <div className="pb-[168px]">
+    <div className="">
       <h1 className="text-center font-bold text-[48px] mt-20 ">
         Trending Apps
       </h1>
@@ -16,6 +16,13 @@ const AppCard = ({ data }) => {
         {datas.map((singleDta) => (
           <AppsCard singleDta={singleDta}></AppsCard>
         ))}
+      </div>
+      <div className="justify-self-center mt-10">
+        <Link to={"/apps"}>
+          <button className="cursor-pointer p-4 w-[124px] h-[50px]  text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2]">
+            Show All{" "}
+          </button>
+        </Link>
       </div>
     </div>
   );
