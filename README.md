@@ -23,6 +23,3 @@ Backend:
 Node.js 
 
 
-Vercel / Netlify (for frontend hosting)
-
-Render / Railway / AWS (for backend services)
