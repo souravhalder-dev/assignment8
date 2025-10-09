@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useLoaderData, useParams } from "react-router";
 import dounloadicon from "./../../assets/icon-downloads.png";
 import avarageicon from "./../../assets/icon-ratings.png";
 import reviewicon from "./../../assets/icon-review.png";
 import RatingChart from "./RatingChart";
+
 const AppsinfoPage = () => {
   const { id } = useParams();
   const nuberConvertid = parseInt(id);
@@ -21,6 +22,25 @@ const AppsinfoPage = () => {
     size,
     description,
   } = singleApps;
+
+  const [installedApps, setInstalledApps] = useState([]);
+
+  useEffect(() => {
+    const installed = JSON.parse(localStorage.getItem("installedApps")) || [];
+    setInstalledApps(installed);
+  }, []);
+
+  const isInstalled = installedApps.some((app) => app.id === singleApps.id);
+
+  const handalClicked = () => {
+    let installed = JSON.parse(localStorage.getItem("installedApps")) || [];
+    if (!installed.find((app) => app.id === singleApps.id)) {
+      installed.push(singleApps);
+      localStorage.setItem("installedApps", JSON.stringify(installed));
+      setInstalledApps(installed);
+    }
+  };
+
   return (
     <div className="bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-20 py-8 sm:py-12 lg:py-20">
       <div className="flex flex-col lg:flex-row justify-start lg:justify-start items-start lg:items-center gap-6 lg:gap-10">
@@ -58,8 +78,14 @@ const AppsinfoPage = () => {
               <p className="font-bold text-xl sm:text-[25px]">{reviews}M</p>
             </div>
           </div>
-          <button className="mt-6 sm:mt-8 lg:mt-9 btn bg-[#00D390] p-3 sm:p-4 text-white rounded-md w-full lg:w-auto">
-            Install Now ({size}MB)
+          <button
+            onClick={handalClicked}
+            disabled={isInstalled}
+            className={`mt-6 sm:mt-8 lg:mt-9 btn bg-[#00D390] p-3 sm:p-4 text-white rounded-md w-full lg:w-auto ${
+              isInstalled ? "opacity-50 bg-red-400 cursor-not-allowed" : ""
+            }`}
+          >
+            {isInstalled ? "Installed" : `Install Now (${size}MB)`}
           </button>
         </div>
       </div>
