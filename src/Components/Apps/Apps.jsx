@@ -34,9 +34,15 @@ const Apps = () => {
         </label>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-2 mt-6]">
-        {searchApps.map((data) => (
-          <Allaps key={data.id} data={data} />
-        ))}
+        {searchApps.length === 0 ? (
+          <div className="col-span-full flex justify-center items-center py-12">
+            <div className=" text-center text-gray-400 text-lg font-semibold">
+              Apps not found
+            </div>
+          </div>
+        ) : (
+          searchApps.map((data) => <Allaps key={data.id} data={data} />)
+        )}
       </div>
     </div>
   );

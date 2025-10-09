@@ -22,15 +22,15 @@ const TextBanner = () => {
 
       <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
         <Link to="https://play.google.com/">
-          <button className="flex items-center justify-center gap-2 w-full sm:w-48 px-5 py-3 font-bold h-14 border border-gray-300 rounded-md hover:shadow-lg transition">
+          <button className="bg-white cursor-pointer flex items-center justify-center gap-2 w-full sm:w-48 px-5 py-3 font-bold h-14 border border-gray-300 rounded-md hover:shadow-lg transition">
             <img className="w-8 h-8" src={playStoreimg} alt="Google Play" />
             Google Play
           </button>
         </Link>
 
         <Link to="https://www.apple.com/store">
-          <button className="flex items-center justify-center gap-2 w-full sm:w-48 px-5 py-3 font-bold h-14 border border-gray-300 rounded-md hover:shadow-lg transition">
-            <img className="w-8 h-8" src={AppleStoreimg} alt="App Store" />
+          <button className="bg-white flex cursor-pointer items-center justify-center gap-2 w-full sm:w-48 px-5 py-3 font-bold h-14 border border-gray-300 rounded-md hover:shadow-lg transition">
+            <img className="w-8 h-8 " src={AppleStoreimg} alt="App Store" />
             App Store
           </button>
         </Link>

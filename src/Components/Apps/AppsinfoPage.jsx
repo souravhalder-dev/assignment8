@@ -40,7 +40,9 @@ const AppsinfoPage = () => {
       setInstalledApps(installed);
     }
   };
-
+  if (!singleApps) {
+    throw new Response("app not found ", { status: 404 });
+  }
   return (
     <div className="bg-gray-100 px-4 sm:px-8 lg:px-16 xl:px-20 py-8 sm:py-12 lg:py-20">
       <div className="flex flex-col lg:flex-row justify-start lg:justify-start items-start lg:items-center gap-6 lg:gap-10">
@@ -82,10 +84,10 @@ const AppsinfoPage = () => {
             onClick={handalClicked}
             disabled={isInstalled}
             className={`mt-6 sm:mt-8 lg:mt-9 btn bg-[#00D390] p-3 sm:p-4 text-white rounded-md w-full lg:w-auto ${
-              isInstalled ? "opacity-50 bg-red-400 cursor-not-allowed" : ""
+              isInstalled ? " !bg-yellow-600 cursor-not-allowed" : " "
             }`}
           >
-            {isInstalled ? "Installed" : `Install Now (${size}MB)`}
+            {isInstalled ? " Installed" : `Install Now (${size}MB)`}
           </button>
         </div>
       </div>

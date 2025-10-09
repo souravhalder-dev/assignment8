@@ -9,7 +9,7 @@ const Banner = () => {
         alt="Hero"
       />
 
-      <div className="w-full px-4 sm:px-10 md:px-20 lg:px-32 mt-8 bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-16 flex flex-col items-center rounded-xl">
+      <div className="w-full px-4 sm:px-10 md:px-20 lg:px-32  bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-16 flex flex-col items-center rounded-xl">
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10">
           Trusted by Millions, Built for You
         </h1>

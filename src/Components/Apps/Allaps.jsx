@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const Allaps = ({ data }) => {
   const { image, title, downloads, ratingAvg, id } = data;
   return (
-    <Link to={`/appinfopage/${id}`}>
+    <Link to={`/apps/${id}`}>
       <div className="mt-5 my-1 w-full sm:w-auto">
         <div className="card bg-base-100 shadow-sm p-4 flex flex-col">
           <figure className="h-48 sm:h-56 overflow-hidden rounded-md">
