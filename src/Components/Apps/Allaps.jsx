@@ -17,7 +17,7 @@ const Allaps = ({ data }) => {
           </figure>
 
           <div className="card-body flex flex-col gap-2 mt-2">
-            <h2 className="card-title text-lg sm:text-xl font-semibold">
+            <h2 className="card-title text-lg  sm:text-xl font-semibold">
               {title}
             </h2>
 

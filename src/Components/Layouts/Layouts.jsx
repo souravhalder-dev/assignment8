@@ -11,9 +11,10 @@ const Layouts = () => {
       <Navber />
 
       <Outlet />
-      <LoadingBar />
+
       <Footer />
       <ToastContainer />
+      <LoadingBar />
     </div>
   );
 };
