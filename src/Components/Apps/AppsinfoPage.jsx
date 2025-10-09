@@ -4,6 +4,7 @@ import dounloadicon from "./../../assets/icon-downloads.png";
 import avarageicon from "./../../assets/icon-ratings.png";
 import reviewicon from "./../../assets/icon-review.png";
 import RatingChart from "./RatingChart";
+import { toast } from "react-toastify";
 
 const AppsinfoPage = () => {
   const { id } = useParams();
@@ -38,6 +39,9 @@ const AppsinfoPage = () => {
       installed.push(singleApps);
       localStorage.setItem("installedApps", JSON.stringify(installed));
       setInstalledApps(installed);
+      toast.success("Success installed !", {
+        position: "top-center",
+      });
     }
   };
   if (!singleApps) {

@@ -1,17 +1,19 @@
 import React from "react";
 import Navber from "../Header/Navber";
-import { Outlet, useNavigation } from "react-router";
+import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import { ToastContainer } from "react-toastify";
+import LoadingBar from "./LoadingBar";
 
 const Layouts = () => {
-  const navigation = useNavigation();
-  const isLoading = navigation.state === "loading";
   return (
     <div>
-      <Navber></Navber>
-      {isLoading ? <p>loading</p> : <Outlet></Outlet>}
+      <Navber />
 
-      <Footer></Footer>
+      <Outlet />
+      <LoadingBar />
+      <Footer />
+      <ToastContainer />
     </div>
   );
 };

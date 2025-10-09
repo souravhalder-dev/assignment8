@@ -1,5 +1,7 @@
 import React from "react";
 import error from "./../../assets/error-404.png";
+
+import { TiArrowBackOutline } from "react-icons/ti";
 const ErrorPage = () => {
   return (
     <div className="px-[80px] flex-col justify-center items-center bg-gray-100 py-30">

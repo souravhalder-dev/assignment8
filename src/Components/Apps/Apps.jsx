@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLoaderData } from "react-router";
 import Allaps from "./Allaps";
 
 const Apps = () => {
   const datas = useLoaderData();
   const [search, setSearch] = useState("");
-  const query = search.trim().toLowerCase();
+  const [loading, setLoading] = useState(false);
+  const [searchApps, setSearchApps] = useState(datas);
 
-  const searchApps = query
-    ? datas.filter((app) => app.title.toLowerCase().includes(query))
-    : datas;
+  useEffect(() => {
+    setLoading(true);
+    const handler = setTimeout(() => {
+      const query = search.trim().toLowerCase();
+      setSearchApps(
+        query
+          ? datas.filter((app) => app.title.toLowerCase().includes(query))
+          : datas
+      );
+      setLoading(false);
+    }, 500); // 500ms delay for animation
+
+    return () => clearTimeout(handler);
+  }, [search, datas]);
 
   return (
     <div className="bg-gray-100 px-4 sm:px-8 lg:px-20 pb-[80px] ">
@@ -24,20 +36,23 @@ const Apps = () => {
           ({searchApps.length}) Apps Found
         </p>
         <label className="input">
-          {" "}
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             type="search"
             placeholder="Search"
-          />{" "}
+          />
         </label>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-2 mt-6]">
-        {searchApps.length === 0 ? (
+        {loading ? (
           <div className="col-span-full flex justify-center items-center py-12">
-            <div className=" text-center text-gray-400 text-lg font-semibold">
-              Apps not found
+            <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-[#00D390] border-solid"></div>
+          </div>
+        ) : searchApps.length === 0 ? (
+          <div className="col-span-full flex justify-center items-center py-12">
+            <div className=" text-center text-5xl text-gray-400 font-semibold">
+              No App Found
             </div>
           </div>
         ) : (
