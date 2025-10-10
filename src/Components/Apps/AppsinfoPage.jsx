@@ -74,14 +74,14 @@ const AppsinfoPage = () => {
               <h1 className="text-gray-400 text-xs sm:text-sm">
                 Average Ratings
               </h1>
-              <p className="font-bold text-xl sm:text-[25px]">{ratingAvg}M</p>
+              <p className="font-bold text-xl sm:text-[25px]">{ratingAvg}</p>
             </div>
             <div className="flex flex-col items-center sm:items-start gap-1">
               <img className="h-[24px] sm:h-[30px]" src={reviewicon} alt="" />
               <h1 className="text-gray-400 text-xs sm:text-sm">
                 Total Reviews
               </h1>
-              <p className="font-bold text-xl sm:text-[25px]">{reviews}M</p>
+              <p className="font-bold text-xl sm:text-[25px]">{reviews}K</p>
             </div>
           </div>
           <button
